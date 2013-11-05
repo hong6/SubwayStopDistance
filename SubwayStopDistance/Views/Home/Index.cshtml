@@ -1,0 +1,50 @@
+﻿@model SubwayStopDistance.Models.StopViewModel
+
+@{   
+    ViewBag.Title = "Subway Stop Distance Calculation";    
+}
+
+<style type="text/css">
+    body {font-family: Arial, Verdana; font-size: 12px; margin: 0; padding: 0;}
+    section{ margin:0 auto; height:80px; display:block; text-align:center; background: url('../../Content/image.jpg') center center;}    
+    .main_content{ margin:0 auto; width:350px; height:300px; text-align:center; border:1px solid #cccccc; padding: 5px 10px;}
+    .divleft { text-align:left; padding-left:5px;}
+    .divblock { height:20px;}
+</style>
+<script type="text/javascript">
+    document.createElement("section");
+</script>
+<section id="tdiv">
+    <h2 style=" padding-top:15px;">Subway Stop Distance Calculation</h2>
+</section>
+@using (Html.BeginForm())
+{
+    <div class="main_content">
+     <div class="divblock"></div>
+        <div>
+            <div class="divleft">From station:</div>
+            <div>
+                @Html.DropDownListFor(m => m.stop_latlonFrom, new SelectList(Model.listvm, "stop_latlonFrom", "stop_name", Model.listvm.First().stop_latlonFrom))
+            </div>
+        </div>
+        <div class="divblock"></div>
+        <div> 
+            <div class="divleft">To Station</div>
+            <div>
+                @Html.DropDownListFor(m => m.stop_latlonTo, new SelectList(Model.listvm, "stop_latlonTo", "stop_name", Model.listvm.First().stop_latlonTo))
+            </div>
+        </div>
+        <div class="divblock"></div>                  
+        <div class="divleft">                                            
+            <input name="submit" id="submit" value="Calculate" type="submit" />
+        </div>
+        <div class="divblock"></div>
+        <div id="result" class="divleft"> 
+            @ViewBag.distance
+        </div>
+    </div>
+}
+
+<script src="../../Scripts/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="../../Scripts/modernizr-2.6.2.js" type="text/javascript"></script>
+<script src="../../Scripts/index.js" type="text/javascript"></script>

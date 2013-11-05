@@ -1,0 +1,6 @@
+C:\SubwayStopDistance\SubwayStopDistance\SubwayStopDistance\bin\SubwayStopDistance.dll
+C:\SubwayStopDistance\SubwayStopDistance\SubwayStopDistance\bin\SubwayStopDistance.pdb
+C:\SubwayStopDistance\SubwayStopDistance\SubwayStopDistance\bin\EntityFramework.dll
+C:\SubwayStopDistance\SubwayStopDistance\SubwayStopDistance\bin\EntityFramework.xml
+C:\SubwayStopDistance\SubwayStopDistance\SubwayStopDistance\obj\Debug\SubwayStopDistance.dll
+C:\SubwayStopDistance\SubwayStopDistance\SubwayStopDistance\obj\Debug\SubwayStopDistance.pdb
